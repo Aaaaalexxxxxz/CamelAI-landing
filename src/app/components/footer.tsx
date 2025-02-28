@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export const Footer = () => {
     return(
-        <footer className="bg-black-800 text-white w-full pt-10 pr-5 pb-2 pl-5">
+        <footer className="bg-black-800 text-white w-full pt-10 pr-5 pb-2 pl-5 z-1 bg-black">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 {/* Left section: text */}
                 <div className="flex flex-col">

@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 bg-opacity-50 w-full p-4 fixed top-4 left-1/2 transform -translate-x-1/2 z-50 rounded-lg backdrop-blur-md max-w-[97%] px-6 pt-4">
+    <nav className="bg-gray-800/20 bg-opacity-50 w-full p-4 fixed top-4 left-1/2 transform -translate-x-1/2 z-50 rounded-lg backdrop-blur-md max-w-[97%] px-6 pt-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="text-white text-2xl font-bold">

@@ -1,7 +1,8 @@
+
 export const Intro = () => {
     return(
-        <div className="pt-[200px] flex flex-col gap-y-10">
-            <section className="flex flex-col p-8 rounded-lg text-white gap-y-8 items-center">
+        <div className="flex flex-col gap-y-10 w-full bg-pink-300/20">
+            <section className="pt-[160px] flex flex-col p-8 rounded-lg text-white gap-y-8 items-center z-2">
                 <h1 className="text-[60px] font-bold">The AI Data Analyst</h1>
                 <h2 className="text-[25px] font-bold">Ask questions, get instant charts and insights from your data.</h2>
                 {/* Buttons */}
@@ -18,30 +19,40 @@ export const Intro = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                     {/* Sliding background element */}
-                    <span className="absolute inset-0 bg-opacity-50 bg-gradient-to-r from-blue-300 to-pink-300 transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out z-0"></span>
+                    <span className="absolute inset-0 bg-opacity-50 bg-gradient-to-r from-blue-200 to-pink-200 transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out z-0"></span>
                     </button>
                 </div>
                 {/* tags */}
                 <div className="flex flex-row gap-x-2 text-[15px] pt-10">
-                    <div className="flex flex-row gap-x-2 bg-gray-300 bg-opacity-10 rounded-xl p-2 text-black font-bold"> 
+                    <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-0 rounded-xl p-2 text-black font-bold"> 
                         <img
                             src="/images/yc-logo.png" 
                             className="w-[20px] h-[20px]"
                             />Y Combinator Backed</div>
-                    <div className="flex flex-row gap-x-2 bg-gray-300 bg-opacity-10 rounded-xl p-2 text-black font-bold">
+                    <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-10 rounded-xl p-2 text-black font-bold">
                         <img
                             src="/images/lock-icon.png" 
                             className="w-[20px] h-[20px]"
                             />Enterprise Security</div>
-                    <div className="flex flex-row gap-x-2 bg-gray-300 bg-opacity-10 rounded-xl p-2 text-black font-bold">
+                    <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-10 rounded-xl p-2 text-black font-bold">
                         <img
                             src="/images/shield-icon.png" 
                             className="w-[20px] h-[20px]"
                             />100% data privacy</div>
                 </div>
             </section>
-            <section>
-                
+            <section className="items-center z-2">
+                <div className="flex items-center justify-center">
+                <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="rounded-4xl object-cover w-240 pb-[25px]"
+            >
+                <source src="/images/RickRoll.mp4" type="video/mp4" />
+            </video>
+                </div>
             </section>
         </div>
     );
