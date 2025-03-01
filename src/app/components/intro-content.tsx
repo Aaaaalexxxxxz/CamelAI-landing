@@ -1,19 +1,19 @@
 
 export const Intro = () => {
     return(
-        <div className="flex flex-col gap-y-10 w-full bg-pink-300/20">
+        <div className="flex flex-col gap-y-10 w-full bg-gradient-to-r from-blue-900 to-pink-900">
             <section className="pt-[160px] flex flex-col p-8 rounded-lg text-white gap-y-8 items-center z-2">
                 <h1 className="text-[60px] font-bold">The AI Data Analyst</h1>
                 <h2 className="text-[25px] font-bold">Ask questions, get instant charts and insights from your data.</h2>
                 {/* Buttons */}
                 <div className="flex flex-row gap-x-4 pt-20"> 
-                    <button className="font-bold flex items-center justify-between bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-200 hover:to-pink-200 hover:scale-105 transform transition-all duration-300 ease-in-out">
+                    <button className="cursor-pointer font-bold flex items-center justify-between bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-200 hover:to-pink-200 hover:translate-y-[-4px] transform transition-all duration-300 ease-in-out">
                             <span>Try Free</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 ml-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                     </button>
-                    <button className="relative font-bold flex items-center justify-between bg-transparent border-2 text-white px-6 py-2 rounded-full group overflow-hidden hover:scale-105 hover:text-black ease-in-out duration-300">
+                    <button className="cursor-pointer relative font-bold flex items-center justify-between bg-transparent border-2 text-white px-6 py-2 rounded-full group overflow-hidden hover:translate-y-[-4px] hover:text-black ease-in-out duration-300">
                     <span className="relative z-10">Book Demo</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 ml-2 z-20">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"></path>

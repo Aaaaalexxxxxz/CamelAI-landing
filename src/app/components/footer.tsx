@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export const Footer = () => {
     return(
-        <footer className="bg-black-800 text-white w-full pt-10 pr-5 pb-2 pl-5 z-1 bg-black">
+        <footer className="bg-black-800 text-white w-full pt-10 px-40 pb-2 z-1 bg-black">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 {/* Left section: text */}
                 <div className="flex flex-col">
@@ -15,8 +15,8 @@ export const Footer = () => {
                     <div className='flex gap-x-2'>
                         <input type="email" id="email" name="email" placeholder='Email' 
                         className="bg-black text-white p-2 rounded-full border-2 border-white-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-300"></input>
-                        <button className="flex items-center justify-between bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-200 hover:to-pink-200 hover:scale-105 transform transition-all duration-500 ease-in-out">
-                            <span>Subscribe</span>
+                        <button className="cursor-pointer flex items-center justify-between bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-200 hover:to-pink-200 hover:scale-102 transform transition-all duration-500 ease-in-out">
+                            <span className="font-bold">Subscribe</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 ml-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
