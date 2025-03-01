@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: black;
     --foreground: #ededed;
   }
 }
@@ -21,4 +21,76 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.button_white {
+  @apply cursor-pointer
+  max-w-max 
+  font-bold 
+  flex 
+  items-center 
+  justify-between 
+  bg-white 
+  text-gray-700 
+  px-6 py-2 
+  rounded-full 
+  hover:bg-gradient-to-r hover:from-blue-200 hover:to-pink-200 
+  hover:translate-y-[-4px] transform transition-all duration-300 
+  ease-in-out;
+}
+
+.content_wrapper {
+  @apply max-w-screen-2xl
+  w-full
+  mx-auto
+  justify-center
+  items-center
+  flex
+  flex-col
+  bg-black;
+}
+
+.demo_wrapper {
+  @apply 
+  flex
+  flex-col
+  gap-y-[10px]
+  w-full
+  items-center
+  justify-center
+  mx-auto
+  my-[80px]
+}
+
+.demo_title {
+  @apply font-bold
+  rounded-lg
+  border-2
+  border-dashed
+  border-gray-100/30
+  items-center
+  bg-transparent
+  flex
+  flex-row
+  m-4
+  p-2
+  md:text-[30px]
+  text-[20px];
+}
+
+.demo_text {
+  @apply
+  font-bold
+  text-[10px]
+  md:text-[18px]
+  flex
+  flex-col
+  items-center
+  justify-center
+}
+
+.demo_image {
+  @apply rounded-lg
+  px-[50px]
+  max-w-6xl
 }
