@@ -1,7 +1,7 @@
 export const MiniFooter = () => {
   return (
     <div className="content_wrapper py-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-x-70">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:gap-x-70 gap-y-10 py-20">
         <div className="font-bold text-[40px]">
           Get started for{" "}
           <span className="text-5xl font-bold bg-gradient-to-r from-pink-200 to-blue-200 bg-clip-text text-transparent">

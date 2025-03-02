@@ -2,16 +2,17 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <footer className="bg-black-800 text-white pt-10 pb-2 z-1 bg-black container mx-auto flex flex-col">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-x-70">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Left section: text */}
         <div className="flex flex-col">
           <Image
+            className="mb-8"
             src="/images/footerpic.png"
             alt="Camel"
             width={300}
             height={30}
           />
-          <p className="font-bold my-4 text-base">
+          <p className="font-bold my-4 text-base mb-8">
             Subscribe to our newsletter for product updates
           </p>
           <div className="flex gap-x-2">
@@ -40,14 +41,14 @@ export const Footer = () => {
               </svg>
             </button>
           </div>
-          <div className="flex gap-x-2 mt-20 mr-0 mb-7 ml-0">
+          <div className="flex gap-x-2 mt-20 mr-0 md:mb-7 mb-20 ml-0 md:justify-start justify-between">
             <a
               href="https://x.com"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r p-2"
             >
-              <Image src="/images/X.png" alt="Twitter" width={8} height={8}/>
+              <Image src="/images/X.png" alt="Twitter" width={35} height={35}/>
             </a>
             <a
               href="https://discord.com"
@@ -55,7 +56,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="bg-gradient-to-r p-2"
             >
-             <Image src="/images/discord.png" alt="discord" width={8} height={8} />
+             <Image src="/images/discord.png" alt="discord" width={35} height={35} />
             </a>
             <a
               href="https://www.linkedin.com"
@@ -63,7 +64,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="bg-gradient-to-r p-2"
             >
-             <Image src="/images/linkedin.png" alt="Linkedin" width={8} height={8} />
+             <Image src="/images/linkedin.png" alt="Linkedin" width={35} height={35} />
             </a>
             <a
               href="https://www.youtube.com"
@@ -71,7 +72,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="bg-gradient-to-r p-2"
             >
-              <Image src="/images/Youtube.png" alt="Youtube" width={8} height={8} />
+              <Image src="/images/Youtube.png" alt="Youtube" width={35} height={35} />
             </a>
             <a
               href="https://github.com"
@@ -79,7 +80,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="bg-gradient-to-r p-2"
             >
-              <Image src="/images/github.png" alt="Github" width={8} height={8} />
+              <Image src="/images/github.png" alt="Github" width={35} height={35} />
             </a>
           </div>
         </div>

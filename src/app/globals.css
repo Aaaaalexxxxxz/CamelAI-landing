@@ -59,7 +59,8 @@ body {
   items-center
   justify-center
   mx-auto
-  my-[80px]
+  md:my-[80px]
+  my-[40px]
 }
 
 .demo_title {

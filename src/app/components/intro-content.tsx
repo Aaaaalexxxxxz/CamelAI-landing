@@ -47,13 +47,14 @@ export const Intro = () => {
           </button>
         </div>
         {/* tags */}
-        <div className="flex flex-row gap-x-2 text-[15px] pt-10">
+        <div className="flex flex-col gap-y-2 md:flex-row md:gap-x-2 text-[15px] pt-10">
           <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-0 rounded-xl p-2 text-black font-bold">
-            <Image src="/images/yc-logo.png" alt="" width={20} height={20} />Y
+            <Image className="intro_icons"
+            src="/images/yc-logo.png" alt="" width={20} height={20} />Y
             Combinator Backed
           </div>
           <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-10 rounded-xl p-2 text-black font-bold">
-            <Image src="/images/lock-icon.png" alt="" width={20} height={20} />
+          <Image src="/images/lock-icon.png" alt="" width={20} height={20} />
             Enterprise Security
           </div>
           <div className="flex flex-row gap-x-2 bg-gray-300/40 bg-opacity-10 rounded-xl p-2 text-black font-bold">
