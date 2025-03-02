@@ -2,14 +2,13 @@
 import { useEffect, useState, RefObject } from 'react';
 
 export const useIntersectionObserver = (
-  ref: RefObject<Element>,
+  ref: RefObject<HTMLElement | null>, // Accept HTMLElement or null
   options: IntersectionObserverInit = {}
 ): boolean => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      // Only update visibility if the section is intersecting (visible)
       if (entry.isIntersecting) {
         setIsVisible(true);
       }

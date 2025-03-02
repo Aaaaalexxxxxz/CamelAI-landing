@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import { Dropdown } from "./navbardropdown"
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
